@@ -88,14 +88,7 @@ After reading a command when the command prompt is "Would you like to try again?
 		say run paragraph on;
 		reject the player's command.
 
-Fabrizio's room is a room. "This was the room your friend Fabrizio was in. The room is submerged in water and you notice his [wallet] floating around and his [belongings] . To the south there is the First Corridor."
-
-wallet is a scenery in Fabrizio's room. The description of wallet is "A German hand carved authentic leather wallet with multiple compartments loaded with [cash]."
-
-belongings is a scenery in Fabrizio's room. The description of Belongings is "Fabrizio's suitcase, backpack and his books."
-
-Fabrizio's suitcase, backpack and books are scenery in Fabrizio's room.
-Cash is a thing in wallet. The description of Cash is "Two $100 notes that look almost unreadable soaked in water"
+Fabrizio's room is a room. "This was the room your friend Fabrizio was in. The room is submerged in water with everything floating around. To the south there is the First Corridor."
 
 The Second Corridor is a room . "Everything is a mess. Things have fallen down and spread out everywhere. To the north you see a Discotheque, to the south you see Rose's cabin, to the east you see the First Corridor."
 
@@ -127,17 +120,11 @@ The description of staircase upper is "To the west of the staircase, you see a c
 
 Third corridor is west of staircase upper. "To the north there Captain's room, to the south there is janitor's room and to the west there is continuation of the corridor . You see from the window that you are headed towards an iceberg."
 
-Janitor's room is south of third corridor. "You enter a small 5'x5' room and see [mops] thrown around beside a clogged [sink]. You see some [life jacket] on the wall, and a shiny [tool box] laying half open in one corner."
+Janitor's room is south of third corridor. "You enter a janitor's room and see mops thrown around, you see some [life jacket] on the wall, and a [tool box]."
 
-mops is a scenery in Janitor's room. The description of mops is "Four slush filled mops kept half submerged in a [bucket]."
+life jacket is a thing in the Janitor's room.
 
-bucket is a scenery in Janitor's room. The description of bucket is "I think its better left undescribed."
-
-sink is a scenery in Janitor's room. The description of sink is "Quick knowledge session, the word 'basin' comes from the old French word baçon, meaning shallow vessel or dish. Those basins were just basins and didn’t have a drain or plug or other conveniences. What we call sinks are in fact ‘basins’ from which the water ‘sinks’. But other than that, are you sure you want to know how clogged it is? especially when the room is a 'ship wreck'."
-
-life jacket is a thing in the Janitor's room. The description of life jacket is "Take this when the ship looks like it is going to sink soon. "
-
-tool box is a thing in the janitor's room. It contains hammer, screw, screwdriver, drill.
+tool box is a thing in the janitor's room. It contains screw, screw driver, drill, hammer.
 
 Captain's room is north of third corridor. "The captain's room is half submerged in water and the captain has fallen unconscious. The captain's [workstation] is in front of you. The workstation has a drawer which is easily accessible from where you are standing."
 
@@ -155,11 +142,21 @@ Fourth corridor is west of third corridor. "The radio room is to the north, to t
 
 Broadcast room is north of fourth corridor. 
 
-Broadcast room is a room ."You are now in the radio room, you see a [radio] with [codes] to the left."
+Broadcast room is a room ."What are all these blinking lights and knobs you wonder? You see an old-fashioned analog [radio] that is buzzing with lights, which must mean it's at least working. Next to it there are some [scraps of paper] and beside it on the floor there is a [dustbin]. "
 
-radio is a thing in the Broadcast room.
+radio is a thing in the Broadcast room. The description of radio is "Marconi 5kW synchronous rotary spark [line break] Installed, tested, aligned, operated by R-Os Jack Philips, Harold Bride at Harland + Wolff, Belfast [line break] Fully functional 2 April, 1912. [line break] If only you  took a communications course at the convent."
 
-codes is a thing in the Broadcast room. codes is fixed in place. Description of codes is "abc"
+scraps of paper is a thing in the Broadcast room. "All the ink seems to have gotten smudged. Must have been written in a hurry you think."
+
+dustbin is a container in the Broadcast room. Description of the dustbin is "Looks like there is a [note] at the bottom of the dustbin."
+
+note is a thing in the dustbin. Description of note is "
+Dear David, [line break]
+I will need the following message sent over to Southampton. [line break]
+Update as of 5 pm Apr 14th : The weather is getting worse, but we are approaching Newfoundland. Over and out. [line break]
+Thanks, [line break]
+Captain E. Smith
+"
 
 Cafeteria is south of fourth corridor. "The cafeteria is a mess. You see glasses shattered everywhere and the furniture all moved to one end of the room. Surprisingly, there is a cabinet full of croissants which is intact. You see that the door is locked. Hmm I wonder if you could just break the [glass-door] open."
 
@@ -264,14 +261,13 @@ After opening glass-door, say "Inside you see a [croissant] on the second shelf.
 
 croissant is a thing in the glass-door
 
-Lifeboat Storage is a room. "Ah, the light at the end of the tunnel. You see a big orange [lifeboat] in front of you and a bunch of drenched safety manuals strewn across the floor. They must have gotten wet from all the water in Fabrizio's room. On the wall you see a [checklist]".
+Lifeboat Storage is a room. "Ah, the light at the end of the tunnel. You see a big orange [boat] in front of you and a bunch of drenched [safety manual]s strewn across the floor. They must have gotten wet from all the water in Fabrizio's room. On the wall you see a [checklist]".
 
-checklist is an thing in the Lifeboat Storage. "Checklist for sucessful evacuation with the Lifeboat. 
-1. Life Jacket 
-2. Food, 
-3. Radio,"
+checklist is an thing in the Lifeboat Storage. The checklist is fixed in place. Description of checklist is "Checklist for sucessful evacuation with the Lifeboat.[line break]1. Life Jacket,[line break]2. Food,[line break]3. Radio.[line break]4. Compass"
 
-lifeboat is a thing in the Lifeboat Storage. The lifeboat is fixed in place.
+safety manual is a thing in the Lifeboat Storage. Description of safety manual is "It is a step-by-step procedure on what to do if there's a fire on the ship. It was an additional section on what to do if there's a power shortage. [line break][line break]You wonder why haven't they included something for when the ship is lost at sea! "
+
+boat is a thing in the Lifeboat Storage. The lifeboat is fixed in place. Description of the boat is "In all its inflated beauty, in front of you is your key to escaping this ship. Once you are set to leave, type <Escape here> to get on the lifeboat and set out."
 
 Escaping is an action applying to nothing.
 
